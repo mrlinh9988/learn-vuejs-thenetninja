@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>VueJS Tutorials</title>
+  <link href="index.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+  <div id="vue-app">
+    <button v-on:click="error = !error">Toggle Error</button>
+    <button v-on:click="success = !success">Toggle Success</button>
+    <!-- <p v-if="error">Error</p>
+    <p v-else-if="success">Success</p> -->
+    <div v-show="error">Error</div>
+    <div v-show="success">Success</div>
+  </div>
+</body>
+
+<script src="conditional.js"></script>
+
+</html>
+
+<!--- Điểu kiện trong Vue: v-if và v-show: 
+  Khác biệt giữa v-if và v-show:
+    v-if sẽ remove element ra khỏi DOM, 
+    còn v-show sẽ thêm style="display: none" vào element đó
+-->

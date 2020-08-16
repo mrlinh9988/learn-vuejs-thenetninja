@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>VueJS Tutorials</title>
+  <link href="punchbag.css" rel="stylesheet" />
+  <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+  <div id="vue-app-one">
+    <h1>{{ title }}</h1>
+    <h3>{{ greet }}</h3>
+  </div>
+
+  <div id="vue-app-two">
+    <h1>{{ title }}</h1>
+    <h3>{{ greet }}</h3>
+    <button v-on:click="changeTitle">Change app one title</button>
+  </div>
+</body>
+
+<script src="multiple-instances.js"></script>
+
+</html> 
