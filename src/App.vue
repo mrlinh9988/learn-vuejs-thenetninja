@@ -1,31 +1,41 @@
 <template>
   <div id="app">
-    <app-header />
-    <app-linh />
-    <app-footer />
+    <div class="container">
+      <AddTodo />
+      <FilterTodos />
+      <Todos />
+    </div>
   </div>
 </template>
 
 <script>
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Linh from "./components/Linh";
+import Todos from './components/Todos';
+import AddTodo from './components/AddTodo';
+import FilterTodos from './components/FilterTodos';
 export default {
-  name: "App",
-  data: function () {
+  name: 'App',
+  data: function() {
     return {};
   },
   methods: {},
   components: {
-    "app-header": Header,
-    "app-footer": Footer,
-    "app-linh": Linh,
+    Todos,
+    AddTodo,
+    FilterTodos,
   },
 };
-// register local component, only use in App component
 </script>
 
-<!-- By default all <style> tag in all components will be insert in DOM -->
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.6;
+  background: #e8f7f0;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 2rem;
+}
 </style>
